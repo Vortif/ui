@@ -1,8 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button alignment="TOP_CENTER" blendMode="RED" cacheHint="ROTATE" contentDisplay="RIGHT" depthTest="ENABLE" layoutX="116.0" layoutY="112.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="136.0" prefWidth="249.0" rotate="135.0" style="-fx-border-radius: 0 0 0 0; -fx-background-radius: 50 50 50 50;" text="Button" textOverrun="WORD_ELLIPSIS">
+         <opaqueInsets>
+            <Insets bottom="50.0" right="10.0" />
+         </opaqueInsets>
+         <effect>
+            <Lighting diffuseConstant="0.37" specularConstant="2.0" specularExponent="24.19" surfaceScale="10.0">
+               <bumpInput>
+                  <ColorInput />
+               </bumpInput>
+            </Lighting>
+         </effect>
+         <rotationAxis>
+            <Point3D x="10.0" z="1.0" />
+         </rotationAxis>
+      </Button>
+   </children>
+</AnchorPane>
